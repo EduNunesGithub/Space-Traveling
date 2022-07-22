@@ -1,22 +1,25 @@
 ## Github Explorer
 
-Página feita durante aula do [Ignite - Rocketseat](https://www.rocketseat.com.br/ignite) que lista todas as finanças do usuário
+Site feito durante aula do [Ignite - Rocketseat](https://www.rocketseat.com.br/ignite).
+
+O site se trata de um blog de tecnologia web.
+
+Foi construido usando Next.js e estilizado com Sass. Os dados dos posts são recebidos através do CMS Prismic e tratados usando paginação estática do Next.js.
 
 ### Screenshot
 
-![cover](https://user-images.githubusercontent.com/107494885/177388944-aa02d145-8369-4eb8-a2c4-b7b5c8b152bf.png)
+![front](https://user-images.githubusercontent.com/107494885/180544877-dd21dc13-b757-4b94-9ea4-27f983888587.png)
 
 ### Link da Aplicação
 
-[https://edununesgithub.github.io/Github-Explorer/](https://edununesgithub.github.io/DT-Money/)
+https://space-traveling-psi.vercel.app
 
 ### Tecnologias Usadas
 
-- Dexie.js
-- Node.js
-- React
-- TypeScript
-- styled-components
+- Next.js
+- Prismic CMS
+- Sass
+- Typescript
 
 ### Autor
 
