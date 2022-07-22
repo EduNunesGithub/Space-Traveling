@@ -1,0 +1,32 @@
+@import "../../styles/unitConverter.scss";
+
+.header-component {
+    width: 100%;
+}
+
+.header-content {
+    display: flex;
+
+    align-items: center;
+
+    margin: auto;
+    padding: 0 pxToRem(32);
+
+    transition: height 0.2s;
+
+    width: 100%;
+    max-width: pxToRem(700 + 32 + 32);
+    height: pxToRem(105);
+}
+
+.header-content-home {
+    height: pxToRem(153);
+}
+
+.logo-link {
+    position: relative;
+
+    aspect-ratio: 238.62 / 25.64;
+    width: 100%;
+    max-width: pxToRem(238.62);
+}

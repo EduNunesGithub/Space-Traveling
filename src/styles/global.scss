@@ -1,0 +1,88 @@
+@import "./unitConverter.scss";
+
+* {
+    box-sizing: border-box;
+
+    margin: 0;
+    padding: 0;
+
+    ::-webkit-scrollbar {
+        width: pxToRem(12);
+        height: pxToRem(12);
+    }
+
+    ::-webkit-scrollbar-button {
+        width: 0;
+        height: 0;
+    }
+
+    ::-webkit-scrollbar-corner {
+        background: transparent;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #FF57B280;
+        border: 0px none #FFFFFF;
+        border-radius: pxToRem(100);
+
+        &:hover {
+            background: #FF57B2BF;
+        }
+
+        &:active {
+            background: var(--highlight);
+        }
+    }
+
+    ::-webkit-scrollbar-track {
+        background: var(--background);
+        border: 0px none #FFFFFF;
+        border-radius: pxToRem(100);
+
+        &:hover {
+            background: var(--background);
+        }
+
+        &:active {
+            background: var(--background);
+        }
+    }
+}
+
+body {
+    background: var(--background);
+
+    scrollbar-gutter: force;
+}
+
+button {
+    cursor: pointer;
+}
+
+:root {
+    --background: #1A1D23;
+    --body: #D7D7D7;
+    --heading: #F8F8F8;
+    --highlight: #FF57B2;
+    --info: #BBBBBB;
+}
+
+.page-container {
+    display: flex;
+
+    flex-direction: column;
+
+    min-height: 100vh;
+}
+
+@media (min-width: 1440px) {
+    html {
+        font-size: 1.1111vw;
+    }
+}
+
+@media (max-width: 720px) {
+    html {
+        font-size: 2.2222vw;
+    }
+}

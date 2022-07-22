@@ -1,0 +1,135 @@
+@import "./unitConverter.scss";
+
+.home-page {
+    padding-bottom: pxToRem(64);
+
+    width: 100%;
+}
+
+.link {
+    position: relative;
+
+    display: flex;
+
+    gap: pxToRem(24);
+
+    flex-direction: column;
+
+    text-decoration: none;
+
+    border-radius: pxToRem(8);
+
+    margin: pxToRem(-8);
+    padding: pxToRem(8);
+
+    transition: 0.2s;
+
+    width: fit-content;
+
+    &:hover {
+        background: #FF57B233;
+
+        margin: pxToRem(-16);
+        padding: pxToRem(16);
+    }
+
+    .link-header {
+        display: flex;
+
+        gap: pxToRem(8);
+
+        flex-direction: column;
+
+        .subtitle {
+            color: var(--body);
+
+            font-family: "Inter", sans-serif;
+            font-size: pxToRem(18);
+            font-weight: 400;
+
+            line-height: pxToRem(21.78);
+
+            text-align: justify;
+        }
+
+        .title {
+            color: var(--heading);
+
+            font-family: "Inter", sans-serif;
+            font-size: pxToRem(28);
+            font-weight: 700;
+
+            letter-spacing: pxToRem(-0.5);
+            line-height: pxToRem(33.88);
+
+            text-align: justify;
+        }
+    }
+
+    .metadata {
+        display: flex;
+
+        gap: pxToRem(24);
+
+        align-items: center;
+
+        span {
+            display: flex;
+
+            gap: pxToRem(8);
+
+            align-items: center;
+
+            color: var(--info);
+
+            font-family: "Inter", sans-serif;
+            font-size: pxToRem(14);
+            font-weight: 400;
+
+            line-height: pxToRem(16.94);
+
+            svg {
+                width: pxToRem(20);
+                height: pxToRem(20);
+            }
+        }
+    }
+}
+
+.links-container {
+    display: flex;
+
+    gap: pxToRem(48);
+
+    flex-direction: column;
+
+    margin: auto;
+    padding: 0 pxToRem(32);
+
+    width: 100%;
+    max-width: pxToRem(700 + 32 + 32);
+}
+
+.load-more-posts {
+    background: none;
+
+    color: var(--highlight);
+
+    font-family: "Inter", sans-serif;
+    font-size: pxToRem(18);
+    font-weight: 600;
+
+    line-height: pxToRem(21.78);
+
+    border: none;
+
+    margin-top: pxToRem(16);
+
+    transition: filter 0.2s;
+
+    width: fit-content;
+
+    &:hover {
+        filter: brightness(0.8);
+    }
+}
