@@ -1,4 +1,4 @@
-## Github Explorer
+## spacetraveling
 
 Site feito durante aula do [Ignite - Rocketseat](https://www.rocketseat.com.br/ignite).
 
